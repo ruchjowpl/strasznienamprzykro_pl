@@ -31,13 +31,15 @@
 	<link rel="stylesheet" type="text/css" href="popup/popup_verte.css" />
 	<link rel="stylesheet" type="text/css" href="popup/popup_premiera.css" />
 	
-	<script type="text/javascript" src="popup/popup.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	
-	
-	
+	<!--<script type="text/javascript" src="popup/popup.js"></script>
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="popup/jquery.youtubepopup.min.js"></script>
 		
-<script>
+		
+<!--<script>
 $(function() {
     $('.button_rece').click(function(e) {
         //jeżeli popup nie jest widoczny to go pokaż
@@ -143,9 +145,13 @@ $(function() {
         $(this).parents('.popup_premiera').fadeOut();
     });
 })
-	</script>
+	</script>-->
 
-	
+<script type="text/javascript">
+    $(function () {
+    $("a.youtube").YouTubePopup();
+});
+</script>	
 
 	
 	
@@ -223,7 +229,7 @@ $(function() {
 	
 	
 	
-	<div class="popup_rece">
+<!-- 	<div class="popup_rece">
     <div class="bg"></div>
     <div class="container2">
         <input type="button" class="close" value="x" />
@@ -232,15 +238,15 @@ $(function() {
         </div>
     </div>
 	</div>
-	
+ -->	
 	
 	
 
 <div class="man">
 
-<a href="" class="button_oczy">OCZY</a>
+<a href="" class="button_oczy ">OCZY</a>
 
-<a href="" class="button_rece">RĘCE</a>
+<a href="https://youtu.be/V4yKSztc_nI" class="button_rece youtube">RĘCE</a>
 
 <a href="" class="button_verte">VERTE</a>
 
