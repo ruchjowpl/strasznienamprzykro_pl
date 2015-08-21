@@ -1,0 +1,25 @@
+.facebook-sharing {
+background: #3b5998;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+padding: 1em 2em;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+font-family: sans-serif;
+margin: 0;
+text-align: center;
+}
+
+.twitter-sharing {
+background: #57cff4;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+padding: 1em 2em;
+-webkit-border-radius: 6px;
+border-radius: 6px;
+font-family: sans-serif;
+margin: 0;
+text-align: center;
+}

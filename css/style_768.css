@@ -1,0 +1,358 @@
+
+
+body {
+
+	background: url('../gfx/background_768.jpg') #c6e6e4 center top repeat;
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	height: 100%;
+	width: 100%;
+
+}
+
+a {
+
+border: none;
+outline: none;
+text-decoration: none;
+
+}
+
+.container {
+
+margin: 0px auto;
+width: 768px;
+position: relative;
+font-size: 12px;
+background: url('') no-repeat;
+}
+
+
+
+.footer_background {
+
+position: absolute;
+background-color: #24458e;
+height: 55px;
+width: 100%;
+text-align: center;
+
+}
+
+.footer_container {
+
+width: 768px;
+
+}
+
+.stopka {
+
+
+font-family: Lato, arial;
+font-weight: 700;
+color: #ffffff;
+font-size: 20px;
+margin: 18px;
+text-align: right;
+display: inline-block;
+text-decoration: none;
+
+}
+
+
+.stopka:hover {
+text-decoration: underline;
+}
+
+
+
+
+.ruchjow_logo {
+
+text-align: left;
+line-height: 55px;
+height: 20px;
+margin: 18px;
+width: 112px;
+background: url('../gfx/ruchjow_logo_768.png') no-repeat;
+display: inline-block;
+
+}
+
+.ruchjow_logo:hover {
+
+background: url('../gfx/ruchjow_logo_hover_768.png') no-repeat;
+
+}
+
+.content {
+
+position: relative;
+width: 768px;
+padding-top: 10px;
+padding-bottom: 6px;
+height: 177px;
+background-color: #ffffff;
+text-align: center;
+
+}
+
+.content_font {
+
+font-family: Lato, arial;
+font-weight: 800;
+font-size: 20px;
+color: #403f3f;
+
+}
+
+.content_font_title {
+
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 30px;
+color: #24458e;
+text-align: center;
+
+}
+
+.stopka_table {width: 768px; background-color: #24458e;}
+
+.stopka_table  td{
+
+vertical-align: top;
+
+}
+
+.man {
+
+width: 768px;
+height: 407px;
+background: url('../gfx/man_768.png') no-repeat;
+
+}
+
+.wplac_container {
+
+width: 768px;
+text-align: left;
+
+
+} 
+
+.wplac_button {
+
+margin-left: 6px;
+vertical-align: middle;
+font-family: Lato, arial;
+font-weight: 300;
+font-size: 24px;
+line-height: 68px;
+padding-left: 60px;
+width: 187px;
+height: 68px;
+background: url('../gfx/button_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.wplac_button .bold {
+
+font-weight: 900;
+
+}
+
+.wplac_button:hover {
+
+background: url('../gfx/button_hover_768.png') no-repeat;
+
+}
+
+.wplac_button2 {
+
+margin-left: 6px;
+vertical-align: middle;
+font-family: Lato, arial;
+font-weight: 300;
+font-size: 24px;
+line-height: 34px;
+padding-left: 60px;
+width: 187px;
+height: 68px;
+background: url('../gfx/button2_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.wplac_button2 .bold {
+
+font-weight: 900;
+
+}
+
+.wplac_button2:hover {
+
+background: url('../gfx/button2_hover_768.png') no-repeat;
+
+}
+
+.button_oczy {
+
+position: relative;
+left: 152px;
+top: 16px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 18px;
+line-height: 61px;
+text-align: left;
+padding-left: 8px;
+width: 140px;
+height: 61px;
+background: url('../gfx/button_oczy_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_oczy:hover {
+
+background: url('../gfx/button_oczy_hover_768.png') no-repeat;
+
+}
+
+.button_rece {
+
+position: relative;
+left: -61px;
+top: 109px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 18px;
+line-height: 61px;
+text-align: left;
+padding-left: 8px;
+width: 140px;
+height: 61px;
+background: url('../gfx/button_rece_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_rece:hover {
+
+background: url('../gfx/button_rece_hover_768.png') no-repeat;
+
+}
+
+.button_verte {
+
+position: relative;
+left: -212px;
+top: 202px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 18px;
+line-height: 62px;
+text-align: left;
+padding-left: 8px;
+width: 149px;
+height: 62px;
+background: url('../gfx/button_verte_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_verte:hover {
+
+background: url('../gfx/button_verte_hover_768.png') no-repeat;
+
+}
+
+.button_nogi {
+
+position: relative;
+left: 24px;
+top: 284px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 18px;
+line-height: 61px;
+text-align: left;
+padding-left: 8px;
+width: 140px;
+height: 61px;
+background: url('../gfx/button_nogi_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_nogi:hover {
+
+background: url('../gfx/button_nogi_hover_768.png') no-repeat;
+
+}
+
+.button_brzuch {
+
+position: relative;
+left: 479px;
+top: 104px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 18px;
+line-height: 62px;
+text-align: left;
+padding-left: 14px;
+width: 170px;
+height: 62px;
+background: url('../gfx/button_brzuch_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_brzuch:hover {
+
+background: url('../gfx/button_brzuch_hover_768.png') no-repeat;
+
+}
+
+.button_premiera {
+
+position: relative;
+left: 280px;
+top: -25px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 11px;
+line-height: 18px;
+text-align: left;
+padding-top: 10px;
+padding-left: 50px;
+width: 97px;
+height: 50px;
+background: url('../gfx/button_premiera_768.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_premiera:hover {
+
+background: url('../gfx/button_premiera_hover_768.png') no-repeat;
+
+}
+
+.main_title {
+
+text-align: center;
+
+}

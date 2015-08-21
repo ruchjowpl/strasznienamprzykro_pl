@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>strasznienamprzykro.pl</title>
+	  <link rel="stylesheet" type="text/css" href="style.css"/>
+	<style type="text/css"></style>
+	<script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
+</head>
+<body>
+<div class="twitter-sharing" data-tnb="twitter-share">Share on Twitter</div> <div class="facebook-sharing" data-tnb="facebook-share">Share on Facebook</div>
+<script type="text/javascript">stLight.options({publisher: "9a895c77-9c5c-4a2c-9eac-dad862e30e28", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "9a895c77-9c5c-4a2c-9eac-dad862e30e28", "position": "left", "ad": { "visible": false, "openDelay": 5, "closeDelay": 0}, "chicklets": { "items": ["facebook", "twitter", "linkedin", "pinterest", "email"]}};
+var st_hover_widget = new sharethis.widgets.hoverbuttons(options);
+</script>
+<script type="text/javascript">
+var twitterShare = document.querySelector('[data-tnb="twitter-share"]');
+
+twitterShare.onclick = function(e) {
+e.preventDefault();
+var twitterWindow = window.open('https://twitter.com/share?url=' + document.URL, 'twitter-popup', 'height=350,width=600');
+if(twitterWindow.focus) { twitterWindow.focus(); }
+return false;
+}
+</script>
+<script type="text/javascript">
+var facebookShare = document.querySelector('[data-tnb="facebook-share"]');
+
+facebookShare.onclick = function(e) {
+e.preventDefault();
+var facebookWindow = window.open('https://www.facebook.com/sharer/sharer.php?u=' + document.URL, 'facebook-popup', 'height=350,width=600');
+if(facebookWindow.focus) { facebookWindow.focus(); }
+return false;
+}
+</script>
+</body>
+</html>
