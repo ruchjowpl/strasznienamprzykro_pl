@@ -31,14 +31,61 @@
 	<link rel="stylesheet" type="text/css" href="popup/popup_verte.css" />
 	<link rel="stylesheet" type="text/css" href="popup/popup_premiera.css" />
 	
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="popup/popup.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <!-- 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <link type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/redmond/jquery-ui.css" rel="stylesheet" />
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="popup/jquery.youtubepopup.min.js"></script>
- -->		
+		
+
+<script type="text/javascript">
+      var tag = document.createElement('script');
+      tag.src = "http://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        $('.button_rece').click(function(e) {
+        //jeżeli popup nie jest widoczny to go pokaż
+        if (!$('.popup_rece:visible').length) {
+            $('.popup_rece').fadeIn();
+        }
+        e.preventDefault();
+        var h = $("#player2").height();
+        var w = $("#player2").width();
+        console.log("h" +h + " w" + w);
+        var player = new YT.Player('player', {
+          height: h,
+          width: w,
+          videoId: 'ecccag3L-yw',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        return false;
+        });
+
+      }
+
+      // The API will call this function when the video player is ready.
+      function onPlayerReady(event) { /* do nothing yet */ }
+
+      // The API calls this function when the player's state changes.
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+                // insert appropriate modal (or whatever) below
+                alert('I hope you enjoyed the video')
+        }
+      }
+</script>
+ -->
+
 <script type="text/javascript">	
 $(function() {
     $('.button_rece').click(function(e) {
@@ -147,12 +194,13 @@ $(function() {
 })
 	</script>
 
+<!--
 <script type="text/javascript">
     $(function () {
     $("a.youtube").YouTubePopup();
 });
 </script>	
-
+-->
 	
 	
 	
@@ -212,7 +260,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
         <div class="content">
-            <div class="">PREMIERA SPOTU <br/>W SOBOTĘ</div>
+            <div class="">PREMIERA SPOTU <br/>W NIEDZIELĘ</div>
         </div>
     </div>
 	</div>
@@ -222,7 +270,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
         <div class="content">
-            <div class="">PREMIERA SPOTU <br/>W NIEDZIELĘ</div>
+            <div class="">PREMIERA SPOTU <br/>W PONIEDZIAŁEK</div>
         </div>
     </div>
 	</div>
@@ -233,8 +281,8 @@ $(function() {
     <div class="bg"></div>
     <div class="container2">
         <input type="button" class="close" value="x" />
-        <div class="content">
-            <div class=""><iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe></div>
+        <div id="player2" class="content">
+            <div id="player" class="player"><iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> </div>
         </div>
     </div>
 	</div>
@@ -254,7 +302,7 @@ $(function() {
 
 <a href="" class="button_brzuch">BRZUCH</a>
 
-<a href="" class="button_premiera">FINAŁ JUŻ WKRÓTCE</a>
+<a href="" class="button_premiera">REFERENDUM <br> JUŻ WKRÓTCE !</a>
 
 </div>
 
@@ -286,8 +334,8 @@ Każda złotówka pomaga dotrzeć do 10 osób!</span><br/><br/>
 
 
 		
-	
-
+<!-- 	<div id="player"></div>
+ -->
 </body>
 
 </html>
