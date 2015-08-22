@@ -351,6 +351,189 @@ background: url('') #727272 no-repeat;
 
 }
 
+.oczy {
+
+position: relative;
+left: 80px;
+top: 8px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_oczy_400.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+
+
+.rece {
+
+position: relative;
+left: -31px;
+top: 56px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_rece_400.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+
+
+.verte {
+
+position: relative;
+left: -109px;
+top: 104px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 32px;
+text-align: left;
+padding-left: 5px;
+width: 82px;
+height: 32px;
+background: url('../gfx/button_verte_400.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+
+
+.nogi {
+
+position: relative;
+left: 9px;
+top: 147px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_nogi_400.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+
+
+.brzuch {
+
+position: relative;
+left: 249px;
+top: 48px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 92px;
+height: 33px;
+background: url('../gfx/button_brzuch_400.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+
+
+.premiera {
+
+position: relative;
+left: 144px;
+top: -15px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 8px;
+line-height: 12px;
+padding-top: 5px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 27px;
+background: url('') #434343 no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.oczy_wkrotce {
+
+position: absolute;
+left: 114px;
+top: 18px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.verte_wkrotce {
+
+position: absolute;
+left: 86px;
+top: 115px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.brzuch_wkrotce {
+
+position: absolute;
+left: 302px;
+top: 97px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.nogi_wkrotce {
+
+position: absolute;
+left: 288px;
+top: 157px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+
+
 .main_title {
 
 text-align: center;
