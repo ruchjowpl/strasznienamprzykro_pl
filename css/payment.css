@@ -1,0 +1,134 @@
+body {
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.video {
+    background: url('../gfx/background.jpg') #c6e6e4 center top repeat;
+}
+
+.payments-container {
+  overflow: hidden;
+  list-style-type: none;
+  margin-top: 25px;
+  padding: 0;
+}
+.payments-container .payment-item {
+  margin-bottom: 35px;
+}
+.payments-container .payment-item a {
+  display: block;
+  height: 85px;
+  color: #fefefe;
+  font-size: 24px;
+  line-height: 80px;
+  padding-left: 18%;
+  font-weight: 300;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+@media (max-width: 380px) {
+  .payments-container .payment-item a {
+    line-height: 35px;
+    padding-left: 20%;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 320px) {
+  .payments-container .payment-item a {
+    padding-left: 25%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .payments-container .payment-item a {
+    padding-left: 25%;
+    line-height: 30px;
+    padding-top: 20px;
+    font-size: 28px;
+  }
+}
+.payments-container .payment-item a strong {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+@media (max-width: 380px) {
+  .payments-container .payment-item a strong {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .payments-container .payment-item a strong {
+    display: block;
+    font-size: 22px;
+  }
+}
+.payments-container .payment-item a strong big {
+  font-size: 53px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .payments-container .payment-item a strong big {
+    font-size: 45px;
+  }
+}
+.payments-container .payment-item a.custom-amount {
+  line-height: 40px;
+  padding-top: 25px;
+}
+@media (max-width: 380px) {
+  .payments-container .payment-item a.custom-amount strong {
+    font-size: 28px;
+  }
+}
+@media (max-width: 320px) {
+  .payments-container .payment-item a.custom-amount strong {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .payments-container .payment-item a.custom-amount strong {
+    font-size: 23px;
+  }
+}
+.payments-container .payment-item a.red {
+  background-color: #f9000e;
+}
+.payments-container .payment-item a.red:hover {
+  background-color: #c6000b;
+}
+.payments-container .payment-item a.blue {
+  background-color: #24458e;
+}
+.payments-container .payment-item a.blue:hover {
+  background-color: #1a3165;
+}
+.payments-container .payment-item a:before {
+  content: '';
+  background: url(../img/button-arrow.png) center no-repeat;
+  width: 47px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+.promises-container {
+  background: #eee;
+  padding-bottom: 30px;
+  padding-top: 50px;
+  border-bottom: 2px solid #f9000e;
+}
+.promises-container .promise-title {
+  color: #f9000e;
+  font-size: 38px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}

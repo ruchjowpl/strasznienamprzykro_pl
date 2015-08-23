@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta property="og:url"                content="http://strasznienamprzykro.pl/nogi.html" />
+<meta property="og:title"              content="StrasznieNamPrzykro.pl - NOGI!" />
+<meta property="og:description"        content="Spoty referendalne ruchjow.pl #TAKdlaJOW #referendum15.pl" />
+<meta property="og:image"              content="http://strasznienamprzykro.pl/gfx/model.png"/>		
+		<title>Nogi</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/bootstrap-social.css">
+		<link rel="stylesheet" href="css/payment.css">
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row" style="padding:10px">
+				<div class="col-xs-6 col-sm-offset-2 col-sm-4 col-md-offset-2 col-md-4 col-lg-offset-2 col-lg-4">
+				<a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-facebook" target="_blank">
+						<i class="fa fa-facebook"></i>Udostępnij na Facebook
+					</a>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+					<a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-twitter" target="_blank">
+						<i class="fa fa-twitter"></i>Udostępniej na Twitter
+					</a>					
+				</div>
+			</div>
+			
+			<div class="row video" style="padding:20px">
+				<div class="container">
+					<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+						<div class="embed-responsive embed-responsive-16by9">
+							<iframe id="nogi_player" class="embed-responsive-item" src="https://www.youtube.com/embed/EjgM28VwxFQ?enablejsapi=1" frameborder="0"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="donation" class="row" style="padding-top:20px; padding-bottom:20px;">
+				<div class="container">
+					<ol class="payments-container">
+						<li class="col-sm-4 col-lg-4 payment-item">
+							<a href="https://secure.transferuj.pl/?h=1ccb9836385a40d6b5306f3403d990fc88becf66"
+								class="red">
+								wpłać <strong><big>20</big> PLN</strong>
+							</a>
+						</li>
+						<li class="col-sm-4 col-lg-4 payment-item">
+							<a href="https://secure.transferuj.pl/?h=8e1f5b1ca920529f726a7f43bc3798f6eed3e227"
+								class="red">
+								wpłać <strong><big>50</big> PLN</strong>
+							</a>
+						</li>
+						<li class="col-sm-4 col-lg-4 payment-item">
+							<a href="https://secure.transferuj.pl/?id=15885&opis=Wsparcie%20promocji%20spot%C3%B3w&crc=strasznienamprzykro.pl&md5sum=72f6fcaeb51ff78768d7c1c0135404b7"
+								class="custom-amount blue ">
+								<strong>inną kwotę</strong>
+							</a>
+						</li>
+					</ol>
+					<p class="text-center">lub wpłać bezpośrednio na konto fundacji "Jednomandatowe Okręgi Wyborcze" im. prof. Jerzego Przystawy dowolną kwotę: <br>
+						Pekao SA nr konta: 81 1240 6768 1111 0010 5970 1904 <br>
+					z dopiskiem "Promocja spotów"  </p>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+		// 2. This code loads the IFrame Player API code asynchronously.
+		var tag = document.createElement('script');
+		tag.src = "http://www.youtube.com/iframe_api";
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+		var player;
+		var player;
+      	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('nogi_player', {
+		events: {
+		'onReady': onPlayerReady,
+		'onStateChange': onPlayerStateChange
+		}
+		});
+	}
+		// The API will call this function when the video player is ready.
+		function onPlayerReady(event) { /* do nothing yet */ }
+		// The API calls this function when the player's state changes.
+		function onPlayerStateChange(event) {
+		if (event.data == YT.PlayerState.ENDED) {
+		// insert appropriate modal (or whatever) below
+		$('#nogi_player').replaceWith('<div id="nogi_player" class="embed-responsive-item" style="background:white; padding:10px"><h2 style="text-allign">Pomóż w promocji:</h2><div class="row"><div class="col-md-offset-1 col-md-5"> <a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-facebook" target="_blank"> <i class="fa fa-facebook"></i>Udostępnij na Facebook </a></div> <div class="col-md-5"><a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/nogi.html" target="_blank" class="btn btn-block btn-social btn-twitter"> <i class="fa fa-twitter"></i>Udostępniej na Twitter </a> </div> </div> <h3>Podoba Ci się przekaz?</h3> <h4>Wesprzyj produkcję i promocję kolejnych spotów. Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</h4> <h3>Więcej spotów na <a href="http://strasznienamprzykro.pl">strasznienamprzykro.pl</a></h3> </div>'); } } // 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
+		</script>
+	</body>
+</html>
