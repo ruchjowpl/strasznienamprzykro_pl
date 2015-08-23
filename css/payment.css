@@ -11,6 +11,10 @@ body {
     background: url('../gfx/background.jpg') #c6e6e4 center top repeat;
 }
 
+.btn {
+  font-size: 24px;
+}
+
 .payments-container {
   overflow: hidden;
   list-style-type: none;
