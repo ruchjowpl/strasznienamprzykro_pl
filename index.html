@@ -109,7 +109,8 @@ $(function() {
                 // insert appropriate modal (or whatever) below
             $('#rece_player').remove();
             $(".popup_rece .content").append('<div id="rece_player" class="rece_player"></div>');
-            $('.popup_rece').fadeOut();            
+            $('.popup_rece').fadeOut(); 
+            $(document).scrollTop( $("#wsparcie").offset().top );             
         }
       }
         return false;
@@ -171,7 +172,8 @@ $(function() {
                 // insert appropriate modal (or whatever) below
             $('#nogi_player').remove();
             $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
-            $('.popup_nogi').fadeOut();            
+            $('.popup_nogi').fadeOut();
+            $(document).scrollTop( $("#wsparcie").offset().top );                                     
         }
       }
         return false;
@@ -235,7 +237,8 @@ $(function() {
                 // insert appropriate modal (or whatever) below
             $('#brzuch_player').remove();
             $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
-            $('.popup_brzuch').fadeOut();            
+            $('.popup_brzuch').fadeOut();
+            $(document).scrollTop( $("#wsparcie").offset().top );                                     
         }
       }
 
@@ -396,7 +399,7 @@ $(function() {
 
 </div>
 
-<div class="content">
+<div id="wsparcie" class="content">
 <div class="fb-share-button" data-href="http://strasznienamprzykro.pl/" data-layout="button_count"></div>
 <span class="content_font_title"> PODOBA CI SIĘ NASZ PRZEKAZ?</span> <br/>
 <span class="content_font">Wesprzyj produkcję i promocję kolejnych spotów. <br/>
