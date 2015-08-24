@@ -86,9 +86,8 @@ $(function() {
         }   
         e.preventDefault();
         var player;
-        var h = $(".popup_rece .content").height();
+        var h = $(".popup_rece .content").height() * 0.8;
         var w = $(".popup_rece .content").width();
-        console.log("h " + h + "w" + w);
         player = new YT.Player('rece_player', {
           height: h,
           width: w,
@@ -98,7 +97,8 @@ $(function() {
             'onStateChange': onPlayerStateChange
           }
         });
-    
+        $(".popup_rece .content").append('<div class="fb-share-button" data-href="http://strasznienamprzykro.pl/" data-layout="button_count"></div>
+');
 
       // The API will call this function when the video player is ready.
       function onPlayerReady(event) { /* do nothing yet */ }
@@ -170,8 +170,8 @@ $(function() {
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
-            $('#rece_player').remove();
-            $(".popup_nogi .content").append('<div id="nogi_player" class="rece_player"></div>');
+            $('#nogi_player').remove();
+            $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
             $('.popup_nogi').fadeOut();            
         }
       }
@@ -211,7 +211,36 @@ $(function() {
             $('.popup_brzuch').fadeIn();
         }
         e.preventDefault();
-        return false;
+        var player;
+        var h = $(".popup_brzuch .content").height();
+        var w = $(".popup_brzuch .content").width();
+        console.log("h " + h + "w" + w);
+        player = new YT.Player('brzuch_player', {
+          height: h,
+          width: w,
+          videoId: 'GNkZlOhyXgE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+    
+
+      // The API will call this function when the video player is ready.
+      function onPlayerReady(event) { /* do nothing yet */ }
+
+      // The API calls this function when the player's state changes.
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+                // insert appropriate modal (or whatever) below
+            $('#brzuch_player').remove();
+            $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
+            $('.popup_brzuch').fadeOut();            
+        }
+      }
+
+      return false;
     });
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
@@ -297,7 +326,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
         <div class="content">
-            <div class="">WKRÓTCE PREMIERA SPOTU</div>
+            <div id="brzuch_player" class="brzuch_player"></div>
         </div>
     </div>
 	</div>
@@ -307,7 +336,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
        <div class="content">
-            <div id="nogi_player" class="rece_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
+            <div id="nogi_player" class="nogi_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
         </div>
     </div>
 	</div>
@@ -353,18 +382,18 @@ $(function() {
 
 <!-- <span class="nogi">NOGI</span> -->
 
-<!-- <a href="" class="button_brzuch">BRZUCH</a> -->
+<a href="" class="button_brzuch">BRZUCH</a>
 
-<span class="brzuch">BRZUCH</span>
-
+<!-- <span class="brzuch">BRZUCH</span>
+ -->
 <!-- <a href="" class="button_premiera">SPOT FINAŁOWY JUŻ WKRÓTCE</a> -->
 
 <span class="premiera">REFERENDUM JUŻ WKRÓTCE</span>
 
 <span class="oczy_wkrotce"></span>
 <span class="verte_wkrotce"></span>
-<span class="brzuch_wkrotce"></span>
-<!-- <span class="nogi_wkrotce"></span> -->
+<!-- <span class="brzuch_wkrotce"></span>
+ --><!-- <span class="nogi_wkrotce"></span> -->
 
 </div>
 
