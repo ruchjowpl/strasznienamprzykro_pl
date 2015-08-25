@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-		<meta property="og:url"                content="http://strasznienamprzykro.pl/nogi.html" />
-		<meta property="og:title"              content="StrasznieNamPrzykro.pl - NOGI!" />
+		<meta property="og:url"                content="http://strasznienamprzykro.pl/pupa.html" />
+		<meta property="og:title"              content="StrasznieNamPrzykro.pl - Pupa!" />
 		<meta property="og:description"        content="Spoty referendalne ruchjow.pl #TAKdlaJOW #referendum15.pl" />
-		<meta property="og:image"              content="http://strasznienamprzykro.pl/gfx/model.png"/>
-		<title>Nogi</title>
+		<meta property="og:image"              content="http://strasznienamprzykro.pl/gfx/pupa.png"/>
+		<title>Pupa</title>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/bootstrap-social.css">
@@ -23,12 +23,12 @@
 					</a>
 				</div>
 				<div class="col-xs-5 col-sm-4 col-md-4 col-lg-4">
-					<a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-facebook" target="_blank">
+					<a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/pupa.html" class="btn btn-block btn-social btn-facebook" target="_blank">
 						<i class="fa fa-facebook"></i>Udostępnij na Facebook
 					</a>
 				</div>
 				<div class="col-xs-5 col-sm-4 col-md-4 col-lg-4">
-					<a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-twitter" target="_blank">
+					<a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/pupa.html" class="btn btn-block btn-social btn-twitter" target="_blank">
 						<i class="fa fa-twitter"></i>Udostępniej na Twitter
 					</a>
 				</div>
@@ -38,14 +38,14 @@
 				<div class="container">
 					<div class="col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
 						<div class="embed-responsive embed-responsive-16by9">
-							<iframe id="nogi_player" class="embed-responsive-item" src="https://www.youtube.com/embed/EjgM28VwxFQ?enablejsapi=1&autoplay=1" frameborder="0"></iframe>
+							<iframe id="pupa_player" class="embed-responsive-item" src="https://www.youtube.com/embed/-3uzU2rIIyM?enablejsapi=1&autoplay=1" frameborder="0"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="donation" class="row" style="padding-top:20px; padding-bottom:20px;">
 				<div class="container">
-					<p class="text-center">Podoba Ci się przekaz StrasznieNamPrzykro.pl?<br>Wesprzyj produkcję i promocję kolejnych spotów. Każda złotówka pozwala nam dotrzeć do 10 nowych osób!
+					<p class="text-center">Podoba Ci się przekaz <a href="http://strasznienamprzykro.pl"> StrasznieNamPrzykro.pl </a> ?<br>Wesprzyj produkcję i promocję kolejnych spotów. Każda złotówka pozwala nam dotrzeć do 10 nowych osób!
 					</p>
 					<ol class="payments-container">
 						<li class="col-sm-4 col-lg-4 payment-item">
@@ -82,7 +82,7 @@
 		var player;
 		var player;
 		function onYouTubeIframeAPIReady() {
-		player = new YT.Player('nogi_player', {
+		player = new YT.Player('pupa_player', {
 		events: {
 		'onReady': onPlayerReady,
 		'onStateChange': onPlayerStateChange
@@ -95,7 +95,7 @@
 		function onPlayerStateChange(event) {
 		if (event.data == YT.PlayerState.ENDED) {
 		// insert appropriate modal (or whatever) below
-		$('#nogi_player').replaceWith('<div id="nogi_player" class="embed-responsive-item" style="background:white; padding:10px"><h2 style="text-allign">Pomóż w promocji:</h2><div class="row"><div class="col-md-offset-1 col-md-5"> <a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/nogi.html" class="btn btn-block btn-social btn-facebook" target="_blank"> <i class="fa fa-facebook"></i>Udostępnij na Facebook </a></div> <div class="col-md-5"><a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/nogi.html" target="_blank" class="btn btn-block btn-social btn-twitter"> <i class="fa fa-twitter"></i>Udostępnij na Twitter </a> </div> </div> <h3>Podoba Ci się przekaz?</h3> <h4>Wesprzyj produkcję i promocję kolejnych spotów. Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</h4> <h3>Więcej spotów na <a href="http://strasznienamprzykro.pl">strasznienamprzykro.pl</a></h3> </div>'); } } // 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
+		$('#pupa_player').replaceWith('<div id="pupa_player" class="embed-responsive-item" style="background:white; padding:10px"><h2 style="text-allign">Pomóż w promocji:</h2><div class="row"><div class="col-md-offset-1 col-md-5"> <a href="http://www.facebook.com/sharer.php?u=http://strasznienamprzykro.pl/pupa.html" class="btn btn-block btn-social btn-facebook" target="_blank"> <i class="fa fa-facebook"></i>Udostępnij na Facebook </a></div> <div class="col-md-5"><a href="http://twitter.com/share?text=%23TAKdlaJOW&url=http://strasznienamprzykro.pl/pupa.html" target="_blank" class="btn btn-block btn-social btn-twitter"> <i class="fa fa-twitter"></i>Udostępnij na Twitter </a> </div> </div> <h3>Podoba Ci się przekaz?</h3> <h4>Wesprzyj produkcję i promocję kolejnych spotów. Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</h4> <h3>Więcej spotów na <a href="http://strasznienamprzykro.pl">strasznienamprzykro.pl</a></h3> </div>'); } } // 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
 		</script>
 		<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
