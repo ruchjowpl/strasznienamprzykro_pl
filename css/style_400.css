@@ -304,7 +304,7 @@ background: url('../gfx/button_nogi_hover_400.png') no-repeat;
 
 position: relative;
 left: 249px;
-top: 48px;
+top: 53px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -322,6 +322,31 @@ display: inline-block;
 .button_brzuch:hover {
 
 background: url('../gfx/button_brzuch_hover_400.png') no-repeat;
+
+}
+
+.button_usta {
+
+position: relative;
+left: 145px;
+top: -14px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_usta_400.png')  no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover_400.png')  no-repeat;
 
 }
 
@@ -439,7 +464,7 @@ display: inline-block;
 
 position: relative;
 left: 249px;
-top: 48px;
+top: 53px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -454,7 +479,24 @@ display: inline-block;
 
 }
 
+.usta {
 
+position: relative;
+left: 145px;
+top: -14px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_usta_400.png')  no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 .premiera {
 
@@ -507,7 +549,7 @@ z-index: 2;
 .brzuch_wkrotce {
 
 position: absolute;
-left: 302px;
+left: 300px;
 top: 97px;
 width: 50px;
 height: 50px;
@@ -523,6 +565,20 @@ z-index: 2;
 position: absolute;
 left: 288px;
 top: 157px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.usta_wkrotce {
+
+position: absolute;
+left: 276px;
+top: 29px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;

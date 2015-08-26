@@ -303,7 +303,7 @@ background: url('../gfx/button_nogi_hover.png') no-repeat;
 
 position: relative;
 left: 730px;
-top: 157px;
+top: 164px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -321,6 +321,31 @@ display: inline-block;
 .button_brzuch:hover {
 
 background: url('../gfx/button_brzuch_hover.png') no-repeat;
+
+}
+
+.button_usta {
+
+position: relative;
+left: 428px;
+top: -34px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 27px;
+line-height: 92px;
+text-align: left;
+padding-left: 16px;
+width: 208px;
+height: 92px;
+background: url('../gfx/button_usta.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover.png') no-repeat;
 
 }
 
@@ -438,7 +463,7 @@ display: inline-block;
 
 position: relative;
 left: 730px;
-top: 157px;
+top: 164px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -453,6 +478,25 @@ display: inline-block;
 
 }
 
+
+.usta {
+
+position: relative;
+left: 428px;
+top: -34px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 27px;
+line-height: 92px;
+text-align: left;
+padding-left: 16px;
+width: 208px;
+height: 92px;
+background: url('../gfx/button_usta.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 
 .premiera {
@@ -474,6 +518,8 @@ color: #ffffff;
 display: inline-block;
 
 }
+
+
 
 .oczy_wkrotce {
 
@@ -522,6 +568,20 @@ z-index: 2;
 position: absolute;
 left: 900px;
 top: 460px;
+width: 96px;
+height: 96px;
+background: url('../gfx/premiera_wkrotce.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.usta_wkrotce {
+
+position: absolute;
+left: 870px;
+top: 80px;
 width: 96px;
 height: 96px;
 background: url('../gfx/premiera_wkrotce.png') no-repeat;

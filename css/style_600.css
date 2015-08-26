@@ -303,8 +303,8 @@ background: url('../gfx/button_nogi_hover_600.png') no-repeat;
 .button_brzuch {
 
 position: relative;
-left: 374px;
-top: 79px;
+left: 373px;
+top: 83px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 14px;
@@ -324,6 +324,34 @@ display: inline-block;
 background: url('../gfx/button_brzuch_hover_600.png') no-repeat;
 
 }
+
+
+.button_usta {
+
+position: relative;
+left: 218px;
+top: -18px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 48px;
+text-align: left;
+padding-left: 10px;
+width: 106px;
+height: 48px;
+background: url('../gfx/button_usta_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover_600.png') no-repeat;
+
+}
+
+
 
 .button_premiera {
 
@@ -438,8 +466,8 @@ display: inline-block;
 .brzuch {
 
 position: relative;
-left: 374px;
-top: 79px;
+left: 373px;
+top: 83px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 14px;
@@ -454,7 +482,24 @@ display: inline-block;
 
 }
 
+.usta {
 
+position: relative;
+left: 218px;
+top: -18px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 48px;
+text-align: left;
+padding-left: 10px;
+width: 106px;
+height: 48px;
+background: url('../gfx/button_usta_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 .premiera {
 
@@ -523,6 +568,20 @@ z-index: 2;
 position: absolute;
 left: 470px;
 top: 235px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.usta_wkrotce {
+
+position: absolute;
+left: 450px;
+top: 45px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
