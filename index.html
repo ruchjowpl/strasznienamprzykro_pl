@@ -105,7 +105,8 @@ $(function() {
             'onStateChange': onPlayerStateChange
           }
         });
-        $(".popup_rece .content").append('<div style="padding-top:5px" class="fb-share-button" data-href="http://strasznienamprzykro.pl/" data-layout="button_count"></div>');
+
+        $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
         FB.XFBML.parse();
 
       // The API will call this function when the video player is ready.
@@ -117,6 +118,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#rece_player').remove();
+            $('#fb-bottons').remove();            
             $(".popup_rece .content").append('<div id="rece_player" class="rece_player"></div>');
             $('.popup_rece').fadeOut(); 
             $(document).scrollTop( $("#wsparcie").offset().top );             
@@ -141,7 +143,7 @@ $(function() {
         }
         e.preventDefault();
                 var player;
-        var h = $(".popup_oczy .content").height();
+        var h = $(".popup_oczy .content").height()* 0.9;;
         var w = $(".popup_oczy .content").width();
         console.log("h " + h + "w" + w);
         player = new YT.Player('oczy_player', {
@@ -153,7 +155,9 @@ $(function() {
             'onStateChange': onPlayerStateChange
           }
         });
-    
+        $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+            FB.XFBML.parse();
+
 
       // The API will call this function when the video player is ready.
       function onPlayerReady(event) { /* do nothing yet */ }
@@ -164,6 +168,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#oczy_player').remove();
+            $('#fb-bottons').remove();                        
             $(".popup_oczy .content").append('<div id="oczy_player" class="oczy_player"></div>');
             $('.popup_oczy').fadeOut();
             $(document).scrollTop( $("#wsparcie").offset().top );                                     
@@ -171,7 +176,9 @@ $(function() {
       }
         return false;
     });
- 
+    
+          $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+      
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_oczy .close, .popup_oczy .bg').click(function() {
         $(this).parents('.popup_oczy').fadeOut();
@@ -188,7 +195,7 @@ $(function() {
         }
         e.preventDefault();
         var player;
-        var h = $(".popup_nogi .content").height();
+        var h = $(".popup_nogi .content").height() * 0.9;;
         var w = $(".popup_nogi .content").width();
         console.log("h " + h + "w" + w);
         player = new YT.Player('nogi_player', {
@@ -200,6 +207,9 @@ $(function() {
             'onStateChange': onPlayerStateChange
           }
         });
+          $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+          FB.XFBML.parse();
+      
         // The API will call this function when the video player is ready.
       function onPlayerReady(event) { /* do nothing yet */ }
 
@@ -209,6 +219,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#nogi_player').remove();
+            $('#fb-bottons').remove();                        
             $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
             $('.popup_nogi').fadeOut();
             $(document).scrollTop( $("#wsparcie").offset().top );                                     
@@ -233,7 +244,7 @@ $(function() {
         }
         e.preventDefault();
         var player;
-        var h = $(".popup_verte .content").height();
+        var h = $(".popup_verte .content").height() * 0.9;;
         var w = $(".popup_verte .content").width();
         console.log("h " + h + "w" + w);
         player = new YT.Player('verte_player', {
@@ -245,6 +256,10 @@ $(function() {
             'onStateChange': onPlayerStateChange
           }
         });
+      
+     $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+        FB.XFBML.parse();
+
         // The API will call this function when the video player is ready.
       function onPlayerReady(event) { /* do nothing yet */ }
 
@@ -254,6 +269,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#verte_player').remove();
+            $('#fb-bottons').remove();                        
             $(".popup_verte .content").append('<div id="verte_player" class="verte_player"></div>');
             $('.popup_verte').fadeOut();
             $(document).scrollTop( $("#wsparcie").offset().top );                                     
@@ -278,7 +294,7 @@ $(function() {
         }
         e.preventDefault();
         var player;
-        var h = $(".popup_brzuch .content").height();
+        var h = $(".popup_brzuch .content").height() * 0.9;;
         var w = $(".popup_brzuch .content").width();
         console.log("h " + h + "w" + w);
         player = new YT.Player('brzuch_player', {
@@ -292,6 +308,9 @@ $(function() {
         });
     
 
+      $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+        FB.XFBML.parse();
+        
       // The API will call this function when the video player is ready.
       function onPlayerReady(event) { /* do nothing yet */ }
 
@@ -301,6 +320,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#brzuch_player').remove();
+            $('#fb-bottons').remove();                        
             $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
             $('.popup_brzuch').fadeOut();
             $(document).scrollTop( $("#wsparcie").offset().top );                                     
@@ -344,7 +364,7 @@ $(function() {
         }
         e.preventDefault();
         var player;
-        var h = $(".popup_usta .content").height();
+        var h = $(".popup_usta .content").height()* 0.9;;
         var w = $(".popup_usta .content").width();
         console.log("h " + h + "w" + w);
         player = new YT.Player('usta_player', {
@@ -357,6 +377,11 @@ $(function() {
           }
         });
         // The API will call this function when the video player is ready.
+      
+      $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
+        FB.XFBML.parse();
+
+      
       function onPlayerReady(event) { /* do nothing yet */ }
 
       // The API calls this function when the player's state changes.
@@ -365,6 +390,7 @@ $(function() {
         if (event.data == YT.PlayerState.ENDED) {
                 // insert appropriate modal (or whatever) below
             $('#usta_player').remove();
+            $('#fb-bottons').remove();                        
             $(".popup_usta .content").append('<div id="usta_player" class="usta_player"></div>');
             $('.popup_usta').fadeOut();
             $(document).scrollTop( $("#wsparcie").offset().top );                                     
