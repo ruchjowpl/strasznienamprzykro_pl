@@ -132,6 +132,35 @@ $(function() {
             $('.popup_oczy').fadeIn();
         }
         e.preventDefault();
+                var player;
+        var h = $(".popup_oczy .content").height();
+        var w = $(".popup_oczy .content").width();
+        console.log("h " + h + "w" + w);
+        player = new YT.Player('oczy_player', {
+          height: h,
+          width: w,
+          videoId: '8Jau9_Tl8zQ',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+    
+
+      // The API will call this function when the video player is ready.
+      function onPlayerReady(event) { /* do nothing yet */ }
+
+      // The API calls this function when the player's state changes.
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+                // insert appropriate modal (or whatever) below
+            $('#oczy_player').remove();
+            $(".popup_oczy .content").append('<div id="oczy_player" class="oczy_player"></div>');
+            $('.popup_oczy').fadeOut();
+            $(document).scrollTop( $("#wsparcie").offset().top );                                     
+        }
+      }
         return false;
     });
  
@@ -157,7 +186,7 @@ $(function() {
         player = new YT.Player('nogi_player', {
           height: h,
           width: w,
-          videoId: 'EjgM28VwxFQ',
+          videoId: '8Jau9_Tl8zQ',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
@@ -195,6 +224,33 @@ $(function() {
             $('.popup_verte').fadeIn();
         }
         e.preventDefault();
+        var player;
+        var h = $(".popup_verte .content").height();
+        var w = $(".popup_verte .content").width();
+        console.log("h " + h + "w" + w);
+        player = new YT.Player('verte_player', {
+          height: h,
+          width: w,
+          videoId: '-3uzU2rIIyM',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+        // The API will call this function when the video player is ready.
+      function onPlayerReady(event) { /* do nothing yet */ }
+
+      // The API calls this function when the player's state changes.
+
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.ENDED) {
+                // insert appropriate modal (or whatever) below
+            $('#verte_player').remove();
+            $(".popup_verte .content").append('<div id="verte_player" class="verte_player"></div>');
+            $('.popup_verte').fadeOut();
+            $(document).scrollTop( $("#wsparcie").offset().top );                                     
+        }
+      }
         return false;
     });
  
@@ -287,12 +343,14 @@ $(function() {
 </head>
 
 <body>
+<div class="container-fluid">
+      <div class="row" style="font-size:24px;text-align:center;background-color: #f9000e;color: #fefefe;  border-bottom: 1px solid black; padding:10px; width:100%"> W piątek spot finałowy !</div>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.4&appId=602035516554175";
+  js.src = "http://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v2.4&appId=602035516554175";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>	
 
@@ -320,7 +378,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
         <div class="content">
-            <div class="">WKRÓTCE PREMIERA SPOTU</div>
+             <div id="oczy_player" class="oczy_player"></div>
         </div>
     </div>
 	</div>
@@ -350,7 +408,7 @@ $(function() {
     <div class="container2">
         <input type="button" class="close" value="x" />
         <div class="content">
-            <div class="">PREMIERA SPOTU <br/>W NIEDZIELĘ</div>
+            <div id="verte_player" class="verte_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
         </div>
     </div>
 	</div>
@@ -372,20 +430,14 @@ $(function() {
 
 <div class="man">
 
-
-
 <span class="oczy">OCZY</span> 
 
-<!-- <a href="" class="button_oczy">OCZY</a> -->
-
+<a href="" class="button_oczy">OCZY</a>
 <a href="" class="button_rece">RĘCE</a>
 
-<!-- <a href="" class="button_verte">VERTE</a> -->
-
-<span class="verte">VERTE</span>
-
-
-
+<a href="" class="button_verte">VERTE</a>
+<!-- <span class="verte">VERTE</span>
+ -->
 <a href="" class="button_nogi">NOGI</a>
 
 <!-- <span class="nogi">NOGI</span> -->
@@ -400,17 +452,25 @@ $(function() {
 
 <span class="premiera">PREMIERA PEŁNEGO <br/> SPOTU JUŻ WKRÓTCE!</span>
 
-<span class="usta_wkrotce"></span>
-<span class="oczy_wkrotce"></span>
-<span class="verte_wkrotce"></span>
+<!-- <span class="oczy_wkrotce"></span> -->
+<span class="usta">USTA</span>
+
+<!-- <a href="" class="button_usta">USTA</a> -->
+<!-- <span class="verte_wkrotce"></span> -->
 <!-- <span class="brzuch_wkrotce"></span>
  --><!-- <span class="nogi_wkrotce"></span> -->
+ <span class="usta_wkrotce"></span>
 
 </div>
 
 <div id="wsparcie" class="content">
-<div class="fb-share-button" data-href="http://strasznienamprzykro.pl/" data-layout="button_count"></div>
 <span class="content_font_title"> PODOBA CI SIĘ NASZ PRZEKAZ?</span> <br/>
+<div class="fb-share-button" data-href="http://strasznienamprzykro.pl" data-layout="button_count"></div>
+<div class="fb-like" data-href="http://strasznienamprzykro.pl" data-send="false" data-layout="button_count" data-width="70" data-show-faces="false">
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="spolecznoscJOW" data-related="spolecznoscJOW">Tweet</a>
+<a href="https://twitter.com/spolecznoscJOW" class="twitter-follow-button" data-show-count="false">Follow @s</a>
+
+<br/>
 <span class="content_font">Wesprzyj produkcję i promocję kolejnych spotów. <br/>
 Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
 
@@ -418,9 +478,6 @@ Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
 </div>
                             
                
-
-
-
  <br/>
 
 
@@ -431,7 +488,6 @@ Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
 </div>
 
 <div class="footer_background"><div class="footer_container"><table class="stopka_table"><tr><td style="text-align: left;"><a href="https://ruchjow.pl" target="_blank" class="ruchjow_logo"></a></td><td style="text-align: right;"><a href="http://referendum15.pl" target="_blank" class="stopka">www.referendum15.pl</a></td></tr></div></div>
-
 
 
 
@@ -448,6 +504,9 @@ Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
   ga('send', 'pageview');
 
 </script>
+
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
 </body>
 
 </html>

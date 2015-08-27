@@ -1,4 +1,4 @@
-$(function() {
+/*$(function() {
     $('.button_oczy').click(function(e) {
         //jeżeli popup nie jest widoczny to go pokaż
         if (!$('.popup:visible').length) {
@@ -12,4 +12,4 @@ $(function() {
     $('.popup .close, .popup .bg').click(function() {
         $(this).parents('.popup').fadeOut();
     });
-})
+})*/
