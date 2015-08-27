@@ -2,7 +2,7 @@
 
 body {
 
-	background: url('../gfx/background_400.jpg') #f0f8eb center top no-repeat;
+	background: url('../gfx/background_400.jpg') #ffffff center top no-repeat;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -35,7 +35,7 @@ background: url('') no-repeat;
 
 position: absolute;
 background-color: #24458e;
-height: 29px;
+height: 51px;
 width: 100%;
 text-align: center;
 
@@ -44,6 +44,9 @@ text-align: center;
 .footer_container {
 
 width: 400px;
+margin: 0px auto;
+position: relative;
+text-align: center;
 
 }
 
@@ -203,7 +206,7 @@ background: url('../gfx/button2_hover_400.png') no-repeat;
 .button_oczy {
 
 position: relative;
-left: 80px;
+left: 79px;
 top: 8px;
 font-family: Lato, arial;
 font-weight: 900;
@@ -254,7 +257,7 @@ background: url('../gfx/button_rece_hover_400.png') no-repeat;
 
 position: relative;
 left: -109px;
-top: 104px;
+top: 106px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -279,7 +282,7 @@ background: url('../gfx/button_verte_hover_400.png') no-repeat;
 
 position: relative;
 left: 9px;
-top: 147px;
+top: 149px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -304,7 +307,7 @@ background: url('../gfx/button_nogi_hover_400.png') no-repeat;
 
 position: relative;
 left: 249px;
-top: 48px;
+top: 49px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -325,19 +328,44 @@ background: url('../gfx/button_brzuch_hover_400.png') no-repeat;
 
 }
 
+.button_usta {
+
+position: relative;
+left: 145px;
+top: -19px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_usta_400.png')  no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover_400.png')  no-repeat;
+
+}
+
 .button_premiera {
 
 position: relative;
-left: 144px;
-top: -15px;
+left: -156px;
+top: 118px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 8px;
 line-height: 12px;
 padding-top: 5px;
 text-align: left;
-padding-left: 5px;
-width: 72px;
+padding-left: 10px;
+width: 100px;
 height: 27px;
 background: url('') #434343 no-repeat;
 color: #ffffff;
@@ -354,7 +382,7 @@ background: url('') #727272 no-repeat;
 .oczy {
 
 position: relative;
-left: 80px;
+left: 79px;
 top: 8px;
 font-family: Lato, arial;
 font-weight: 900;
@@ -397,7 +425,7 @@ display: inline-block;
 
 position: relative;
 left: -109px;
-top: 104px;
+top: 106px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -439,7 +467,7 @@ display: inline-block;
 
 position: relative;
 left: 249px;
-top: 48px;
+top: 49px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 10px;
@@ -454,21 +482,38 @@ display: inline-block;
 
 }
 
+.usta {
 
+position: relative;
+left: 145px;
+top: -19px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 10px;
+line-height: 33px;
+text-align: left;
+padding-left: 5px;
+width: 72px;
+height: 33px;
+background: url('../gfx/button_usta_400.png')  no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 .premiera {
 
 position: relative;
-left: 144px;
-top: -15px;
+left: -96px;
+top: 118px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 8px;
 line-height: 12px;
 padding-top: 5px;
 text-align: left;
-padding-left: 5px;
-width: 72px;
+padding-left: 10px;
+width: 100px;
 height: 27px;
 background: url('') #434343 no-repeat;
 color: #ffffff;
@@ -480,7 +525,7 @@ display: inline-block;
 
 position: absolute;
 left: 114px;
-top: 18px;
+top: 28px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
@@ -494,7 +539,7 @@ z-index: 2;
 
 position: absolute;
 left: 86px;
-top: 115px;
+top: 125px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
@@ -532,7 +577,19 @@ z-index: 2;
 
 }
 
+.usta_wkrotce {
 
+position: absolute;
+left: 276px;
+top: 39px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
 
 .main_title {
 

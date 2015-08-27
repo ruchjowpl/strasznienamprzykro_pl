@@ -2,7 +2,7 @@
 
 body {
 
-	background: url('../gfx/background_600.jpg') #f0f8eb center top no-repeat;
+	background: url('../gfx/background_600.jpg') #ffffff center top no-repeat;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -35,7 +35,7 @@ background: url('') no-repeat;
 
 position: absolute;
 background-color: #24458e;
-height: 43px;
+height: 58px;
 width: 100%;
 text-align: center;
 
@@ -44,6 +44,9 @@ text-align: center;
 .footer_container {
 
 width: 600px;
+margin: 0px auto;
+position: relative;
+text-align: center;
 
 }
 
@@ -254,7 +257,7 @@ background: url('../gfx/button_rece_hover_600.png') no-repeat;
 
 position: relative;
 left: -165px;
-top: 158px;
+top: 160px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 14px;
@@ -303,8 +306,8 @@ background: url('../gfx/button_nogi_hover_600.png') no-repeat;
 .button_brzuch {
 
 position: relative;
-left: 374px;
-top: 79px;
+left: 373px;
+top: 80px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 14px;
@@ -325,21 +328,46 @@ background: url('../gfx/button_brzuch_hover_600.png') no-repeat;
 
 }
 
-.button_premiera {
+.button_usta {
 
 position: relative;
 left: 218px;
-top: -18px;
+top: -23px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 48px;
+text-align: left;
+padding-left: 10px;
+width: 106px;
+height: 48px;
+background: url('../gfx/button_usta_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover_600.png') no-repeat;
+
+}
+
+.button_premiera {
+
+position: relative;
+left: -234px;
+top: 178px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 8px;
 line-height: 14px;
 text-align: left;
 padding-top: 10px;
-padding-left: 40px;
-width: 75px;
-height: 47px;
-background: url('../gfx/button_premiera_600.png') no-repeat;
+padding-left: 20px;
+width: 141px;
+height: 38px;
+background: url('../gfx/button_premiera_600.png') #434343 no-repeat;
 color: #ffffff;
 display: inline-block;
 
@@ -347,7 +375,7 @@ display: inline-block;
 
 .button_premiera:hover {
 
-background: url('../gfx/button_premiera_hover_600.png') no-repeat;
+background: url('../gfx/button_premiera_hover_600.png') #727272 no-repeat;
 
 }
 
@@ -398,7 +426,7 @@ display: inline-block;
 
 position: relative;
 left: -165px;
-top: 158px;
+top: 160px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 14px;
@@ -454,23 +482,40 @@ display: inline-block;
 
 }
 
+.usta {
 
+position: relative;
+left: 218px;
+top: -23px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 48px;
+text-align: left;
+padding-left: 10px;
+width: 106px;
+height: 48px;
+background: url('../gfx/button_usta_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 .premiera {
 
 position: relative;
-left: 218px;
-top: -18px;
+left: -234px;
+top: 178px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 8px;
 line-height: 14px;
 text-align: left;
 padding-top: 10px;
-padding-left: 40px;
-width: 75px;
-height: 47px;
-background: url('../gfx/button_premiera_600.png') no-repeat;
+padding-left: 20px;
+width: 141px;
+height: 38px;
+background: url('../gfx/button_premiera_600.png') #434343 no-repeat;
 color: #ffffff;
 display: inline-block;
 
@@ -479,8 +524,8 @@ display: inline-block;
 .oczy_wkrotce {
 
 position: absolute;
-left: 198px;
-top: 28px;
+left: 174px;
+top: 41px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
@@ -493,8 +538,8 @@ z-index: 2;
 .verte_wkrotce {
 
 position: absolute;
-left: 158px;
-top: 175px;
+left: 134px;
+top: 188px;
 width: 50px;
 height: 50px;
 background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
@@ -532,6 +577,19 @@ z-index: 2;
 
 }
 
+.usta_wkrotce {
+
+position: absolute;
+left: 423px;
+top: 57px;
+width: 50px;
+height: 50px;
+background: url('../gfx/premiera_wkrotce_600.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
 
 
 .main_title {

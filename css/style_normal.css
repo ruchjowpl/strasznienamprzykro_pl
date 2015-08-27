@@ -2,7 +2,7 @@
 
 body {
 
-	background: url('../gfx/background.jpg') #c6e6e4 center top repeat;
+	background: url('../gfx/background.jpg') #ffffff center top no-repeat;
 	margin-top: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
@@ -35,7 +35,7 @@ background: url('') no-repeat;
 
 position: absolute;
 background-color: #24458e;
-height: 84px;
+height: 97px;
 width: 100%;
 text-align: center;
 
@@ -44,6 +44,10 @@ text-align: center;
 .footer_container {
 
 width: 1170px;
+margin: 0px auto;
+position: relative;
+text-align: center;
+
 
 }
 
@@ -203,7 +207,7 @@ background: url('../gfx/button2_hover.png') no-repeat;
 
 position: relative;
 left: 232px;
-top: 26px;
+top: 28px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -228,7 +232,7 @@ background: url('../gfx/button_oczy_hover.png') no-repeat;
 
 position: relative;
 left: -89px;
-top: 167px;
+top: 170px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -252,8 +256,8 @@ background: url('../gfx/button_rece_hover.png') no-repeat;
 .button_verte {
 
 position: relative;
-left: -315px;
-top: 309px;
+left: -316px;
+top: 312px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -278,7 +282,7 @@ background: url('../gfx/button_verte_hover.png') no-repeat;
 
 position: relative;
 left: 48px;
-top: 435px;
+top: 437px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -302,7 +306,7 @@ background: url('../gfx/button_nogi_hover.png') no-repeat;
 .button_brzuch {
 
 position: relative;
-left: 730px;
+left: 729px;
 top: 157px;
 font-family: Lato, arial;
 font-weight: 900;
@@ -324,19 +328,44 @@ background: url('../gfx/button_brzuch_hover.png') no-repeat;
 
 }
 
+.button_usta {
+
+position: relative;
+left: 430px;
+top: -43px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 27px;
+line-height: 92px;
+text-align: left;
+padding-left: 16px;
+width: 208px;
+height: 92px;
+background: url('../gfx/button_usta.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_usta:hover {
+
+background: url('../gfx/button_usta_hover.png') no-repeat;
+
+}
+
 .button_premiera {
 
 position: relative;
-left: 428px;
-top: -34px;
+left: -451px;
+top: 350px;
 font-family: Lato, arial;
 font-weight: 900;
-font-size: 16px;
+font-size: 20px;
 line-height: 24px;
 text-align: left;
 padding-top: 20px;
-padding-left: 80px;
-width: 144px;
+padding-left: 20px;
+width: 295px;
 height: 72px;
 background: url('../gfx/button_premiera.png') no-repeat;
 color: #ffffff;
@@ -355,7 +384,7 @@ background: url('../gfx/button_premiera_hover.png') no-repeat;
 
 position: relative;
 left: 232px;
-top: 26px;
+top: 28px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -375,7 +404,7 @@ display: inline-block;
 
 position: relative;
 left: -89px;
-top: 167px;
+top: 170px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -395,8 +424,8 @@ display: inline-block;
 .verte {
 
 position: relative;
-left: -315px;
-top: 309px;
+left: -316px;
+top: 312px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -417,7 +446,7 @@ display: inline-block;
 
 position: relative;
 left: 48px;
-top: 435px;
+top: 437px;
 font-family: Lato, arial;
 font-weight: 900;
 font-size: 27px;
@@ -437,7 +466,7 @@ display: inline-block;
 .brzuch {
 
 position: relative;
-left: 730px;
+left: 729px;
 top: 157px;
 font-family: Lato, arial;
 font-weight: 900;
@@ -453,21 +482,38 @@ display: inline-block;
 
 }
 
+.usta {
 
+position: relative;
+left: 430px;
+top: -43px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 27px;
+line-height: 92px;
+text-align: left;
+padding-left: 16px;
+width: 208px;
+height: 92px;
+background: url('../gfx/button_usta.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
 
 .premiera {
 
 position: relative;
-left: 428px;
-top: -34px;
+left: -451px;
+top: 350px;
 font-family: Lato, arial;
 font-weight: 900;
-font-size: 16px;
-line-height: 24px;
+font-size: 20px;
+line-height: 26px;
 text-align: left;
 padding-top: 20px;
-padding-left: 80px;
-width: 144px;
+padding-left: 20px;
+width: 295px;
 height: 72px;
 background: url('../gfx/button_premiera.png') no-repeat;
 color: #ffffff;
@@ -478,8 +524,8 @@ display: inline-block;
 .oczy_wkrotce {
 
 position: absolute;
-left: 388px;
-top: 50px;
+left: 342px;
+top: 79px;
 width: 96px;
 height: 96px;
 background: url('../gfx/premiera_wkrotce.png') no-repeat;
@@ -492,8 +538,8 @@ z-index: 2;
 .verte_wkrotce {
 
 position: absolute;
-left: 308px;
-top: 330px;
+left: 264px;
+top: 364px;
 width: 96px;
 height: 96px;
 background: url('../gfx/premiera_wkrotce.png') no-repeat;
@@ -507,7 +553,7 @@ z-index: 2;
 
 position: absolute;
 left: 940px;
-top: 280px;
+top: 298px;
 width: 96px;
 height: 96px;
 background: url('../gfx/premiera_wkrotce.png') no-repeat;
@@ -522,6 +568,20 @@ z-index: 2;
 position: absolute;
 left: 900px;
 top: 460px;
+width: 96px;
+height: 96px;
+background: url('../gfx/premiera_wkrotce.png') no-repeat;
+color: #ffffff;
+display: inline-block;
+z-index: 2;
+
+}
+
+.usta_wkrotce {
+
+position: absolute;
+left: 825px;
+top: 110px;
 width: 96px;
 height: 96px;
 background: url('../gfx/premiera_wkrotce.png') no-repeat;
