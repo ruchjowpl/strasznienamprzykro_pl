@@ -129,6 +129,9 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_rece .close, .popup_rece .bg').click(function() {
+        $('#rece_player').remove();
+        $('#fb-bottons').remove();            
+        $(".popup_rece .content").append('<div id="rece_player" class="rece_player"></div>');
         $(this).parents('.popup_rece').fadeOut();
     });
 })
@@ -180,6 +183,9 @@ $(function() {
       
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_oczy .close, .popup_oczy .bg').click(function() {
+        $('#oczy_player').remove();
+        $('#fb-bottons').remove();                        
+        $(".popup_oczy .content").append('<div id="oczy_player" class="oczy_player"></div>');      
         $(this).parents('.popup_oczy').fadeOut();
     });
 })
@@ -229,6 +235,9 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_nogi .close, .popup_nogi .bg').click(function() {
+        $('#nogi_player').remove();
+        $('#fb-bottons').remove();                        
+        $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
         $(this).parents('.popup_nogi').fadeOut();
     });
 })
@@ -279,6 +288,9 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_verte .close, .popup_verte .bg').click(function() {
+        $('#verte_player').remove();
+        $('#fb-bottons').remove();                        
+        $(".popup_verte .content").append('<div id="verte_player" class="verte_player"></div>');
         $(this).parents('.popup_verte').fadeOut();
     });
 })
@@ -331,6 +343,9 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_brzuch .close, .popup_brzuch .bg').click(function() {
+        $('#brzuch_player').remove();
+        $('#fb-bottons').remove();                        
+        $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
         $(this).parents('.popup_brzuch').fadeOut();
     });
 })
@@ -383,7 +398,10 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_premiera .close, .popup_premiera .bg').click(function() {
-        $(this).parents('.popup_premiera').fadeOut();
+            $('#premiera_player').remove();
+            $('#fb-bottons').remove();                        
+            $(".popup_premiera .content").append('<div id="premiera_player" class="premiera_player"></div>');
+           $(this).parents('.popup_premiera').fadeOut();
     });
 })
 	</script>
@@ -434,6 +452,9 @@ $(function() {
  
     //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
     $('.popup_usta .close, .popup_usta .bg').click(function() {
+        $('#usta_player').remove();
+        $('#fb-bottons').remove();                        
+        $(".popup_usta .content").append('<div id="usta_player" class="usta_player"></div>');    
         $(this).parents('.popup_usta').fadeOut();
     });
 })
@@ -608,9 +629,12 @@ Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
 </div>
 
 <div class="footer_background"><div class="footer_container"><table class="stopka_table"><tr><td style="text-align: left;"><a href="https://ruchjow.pl" target="_blank" class="ruchjow_logo"></a></td><td style="text-align: right;"><a href="http://referendum15.pl" target="_blank" class="stopka">www.referendum15.pl</a></td></tr></div></div>
+</table>
+</div>
+</div>
+<br>
 
-
-
+<div style="width:50%; backgroud-color:red">NOWNOWNOWNOO?</div><div style="width:50%:green">A nic?</div>
 
 		
 	
