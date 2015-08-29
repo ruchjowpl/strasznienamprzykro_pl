@@ -48,15 +48,15 @@ $('.button_usta').click(function(e) {
 });
 
 $('.button_final').click(function(e) {
-    bindAction(e,7);
+    bindAction(e,6);
 });
 
 $('.button_frekwencja').click(function(e) {
-    bindAction(e,8);
+    bindAction(e,7);
 });
 
 $('.button_animacja').click(function(e) {
-    bindAction(e,9);
+    bindAction(e,8);
 });
 
 function bindAction(e,i) {
