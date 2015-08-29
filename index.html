@@ -28,447 +28,29 @@
 	<link rel="stylesheet" media="screen and (max-width: 599px)" href="css/style_400.css" type="text/css"/>
 	
 	
+	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_1170.css" />
+	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_768.css" />
+	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_600.css" />
+	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_400.css" />
 	
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_rece_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_rece_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_rece_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_rece_400.css" />
-	
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_verte_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_verte_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_verte_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_verte_400.css" />
-	
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_nogi_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_nogi_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_nogi_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_nogi_400.css" />
-	
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_brzuch_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_brzuch_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_brzuch_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_brzuch_400.css" />
-	
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_oczy_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_oczy_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_oczy_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_oczy_400.css" />
-	
-  <link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_premiera_1170.css" />
-  <link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_premiera_768.css" />
-  <link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_premiera_600.css" />
-  <link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_premiera_400.css" />
-
-	<link rel="stylesheet" media="screen and (min-width: 1170px)" type="text/css" href="popup/popup_usta_1170.css" />
-	<link rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 1169px)"type="text/css" href="popup/popup_usta_768.css" />
-	<link rel="stylesheet" media="screen and (min-width: 600px) and (max-width: 767px)"type="text/css" href="popup/popup_usta_600.css" />
-	<link rel="stylesheet" media="screen and (max-width: 599px)"type="text/css" href="popup/popup_usta_400.css" />
-
-    <link rel="stylesheet" href="css/slideBox.css" type="text/css"/>
-
-	
-<script type="text/javascript">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet"  href="css/sharing.css" type="text/css"/>
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript" src="popup/popup.js"></script>
   
-      // 2. This code loads the IFrame Player API code asynchronously.
+<script type="text/javascript">
+       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
       tag.src = "http://www.youtube.com/iframe_api";
       var firstScriptTag = document.getElementsByTagName('script')[0];
       firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
       // 3. This function creates an <iframe> (and YouTube player) after the API code downloads.
-     
-
 </script>
-	<script type="text/javascript" src="popup/popup.js"></script>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-	
-	
-	
-		
-<script>
-$(function() {
-    $('.button_rece').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_rece:visible').length) {
-            $('.popup_rece').fadeIn();
-        }   
-        e.preventDefault();
-        var player;
-        var h = $(".popup_rece .content").height() * 0.9;
-        var w = $(".popup_rece .content").width();
-        player = new YT.Player('rece_player', {
-          height: h,
-          width: w,
-          videoId: 'V4yKSztc_nI',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-
-        $(".popup_rece .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-        FB.XFBML.parse();
-
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#rece_player').remove();
-            $('#fb-bottons').remove();            
-            $(".popup_rece .content").append('<div id="rece_player" class="rece_player"></div>');
-            $('.popup_rece').fadeOut(); 
-            $(document).scrollTop( $("#wsparcie").offset().top );             
-        }
-      }
-        return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_rece .close, .popup_rece .bg').click(function() {
-        $('#rece_player').remove();
-        $('#fb-bottons').remove();            
-        $(".popup_rece .content").append('<div id="rece_player" class="rece_player"></div>');
-        $(this).parents('.popup_rece').fadeOut();
-    });
-})
-	</script>
-	
-	<script>
-$(function() {
-    $('.button_oczy').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_oczy:visible').length) {
-            $('.popup_oczy').fadeIn();
-        }
-        e.preventDefault();
-                var player;
-        var h = $(".popup_oczy .content").height()* 0.9;;
-        var w = $(".popup_oczy .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('oczy_player', {
-          height: h,
-          width: w,
-          videoId: '8Jau9_Tl8zQ',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-        $(".popup_oczy .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-            FB.XFBML.parse();
-
-
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#oczy_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_oczy .content").append('<div id="oczy_player" class="oczy_player"></div>');
-            $('.popup_oczy').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-        return false;
-    });
-    
-      
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_oczy .close, .popup_oczy .bg').click(function() {
-        $('#oczy_player').remove();
-        $('#fb-bottons').remove();                        
-        $(".popup_oczy .content").append('<div id="oczy_player" class="oczy_player"></div>');      
-        $(this).parents('.popup_oczy').fadeOut();
-    });
-})
-	</script>
-	
-		<script>
-$(function() {
-    $('.button_nogi').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_nogi:visible').length) {
-            $('.popup_nogi').fadeIn();
-        }
-        e.preventDefault();
-        var player;
-        var h = $(".popup_nogi .content").height() * 0.9;;
-        var w = $(".popup_nogi .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('nogi_player', {
-          height: h,
-          width: w,
-          videoId: 'EjgM28VwxFQ',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-          $(".popup_nogi .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-          FB.XFBML.parse();
-      
-        // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#nogi_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
-            $('.popup_nogi').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-        return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_nogi .close, .popup_nogi .bg').click(function() {
-        $('#nogi_player').remove();
-        $('#fb-bottons').remove();                        
-        $(".popup_nogi .content").append('<div id="nogi_player" class="nogi_player"></div>');
-        $(this).parents('.popup_nogi').fadeOut();
-    });
-})
-	</script>
-	
-	<script>
-$(function() {
-    $('.button_verte').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_verte:visible').length) {
-            $('.popup_verte').fadeIn();
-        }
-        e.preventDefault();
-        var player;
-        var h = $(".popup_verte .content").height() * 0.9;;
-        var w = $(".popup_verte .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('verte_player', {
-          height: h,
-          width: w,
-          videoId: '-3uzU2rIIyM',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      
-     $(".popup_verte .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-        FB.XFBML.parse();
-
-        // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#verte_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_verte .content").append('<div id="verte_player" class="verte_player"></div>');
-            $('.popup_verte').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-        return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_verte .close, .popup_verte .bg').click(function() {
-        $('#verte_player').remove();
-        $('#fb-bottons').remove();                        
-        $(".popup_verte .content").append('<div id="verte_player" class="verte_player"></div>');
-        $(this).parents('.popup_verte').fadeOut();
-    });
-})
-	</script>
-	
-	<script>
-$(function() {
-    $('.button_brzuch').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_brzuch:visible').length) {
-            $('.popup_brzuch').fadeIn();
-        }
-        e.preventDefault();
-        var player;
-        var h = $(".popup_brzuch .content").height() * 0.9;;
-        var w = $(".popup_brzuch .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('brzuch_player', {
-          height: h,
-          width: w,
-          videoId: 'GNkZlOhyXgE',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-    
-
-      $(".popup_brzuch .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-        FB.XFBML.parse();
-        
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#brzuch_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
-            $('.popup_brzuch').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-
-      return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_brzuch .close, .popup_brzuch .bg').click(function() {
-        $('#brzuch_player').remove();
-        $('#fb-bottons').remove();                        
-        $(".popup_brzuch .content").append('<div id="brzuch_player" class="brzuch_player"></div>');
-        $(this).parents('.popup_brzuch').fadeOut();
-    });
-})
-	</script>
-	
-		<script>
-$(function() {
-    $('.button_premiera').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_premiera:visible').length) {
-            $('.popup_premiera').fadeIn();
-        }
-        e.preventDefault();
-                var player;
-        var h = $(".popup_premiera .content").height() * 0.9;;
-        var w = $(".popup_premiera .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('premiera_player', {
-          height: h,
-          width: w,
-          videoId: 'mmu7l2N7zag',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-    
-
-      $(".popup_premiera .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-        FB.XFBML.parse();
-        
-      // The API will call this function when the video player is ready.
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#premiera_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_premiera .content").append('<div id="premiera_player" class="premiera_player"></div>');
-            $('.popup_premiera').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-
-        return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_premiera .close, .popup_premiera .bg').click(function() {
-            $('#premiera_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_premiera .content").append('<div id="premiera_player" class="premiera_player"></div>');
-           $(this).parents('.popup_premiera').fadeOut();
-    });
-})
-	</script>
-
-<script type="text/javascript">
-$(function() {
-    $('.button_usta').click(function(e) {
-        //jeżeli popup nie jest widoczny to go pokaż
-        if (!$('.popup_usta:visible').length) {
-            $('.popup_usta').fadeIn();
-        }
-        e.preventDefault();
-        var player;
-        var h = $(".popup_usta .content").height()* 0.9;;
-        var w = $(".popup_usta .content").width();
-        console.log("h " + h + "w" + w);
-        player = new YT.Player('usta_player', {
-          height: h,
-          width: w,
-          videoId: 'g4F5rELvr3U',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-        // The API will call this function when the video player is ready.
-      
-      $(".popup_usta .content").append('<div id="fb-bottons" style="padding-top:5px" class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>');
-        FB.XFBML.parse();
-
-      
-      function onPlayerReady(event) { /* do nothing yet */ }
-
-      // The API calls this function when the player's state changes.
-
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.ENDED) {
-                // insert appropriate modal (or whatever) below
-            $('#usta_player').remove();
-            $('#fb-bottons').remove();                        
-            $(".popup_usta .content").append('<div id="usta_player" class="usta_player"></div>');
-            $('.popup_usta').fadeOut();
-            $(document).scrollTop( $("#wsparcie").offset().top );                                     
-        }
-      }
-        return false;
-    });
- 
-    //zdarzenie zamknięcia podpinamy pod przycisk close i pod tło popupa
-    $('.popup_usta .close, .popup_usta .bg').click(function() {
-        $('#usta_player').remove();
-        $('#fb-bottons').remove();                        
-        $(".popup_usta .content").append('<div id="usta_player" class="usta_player"></div>');    
-        $(this).parents('.popup_usta').fadeOut();
-    });
-})
-  </script>
 	
 	
 	
 <title>STRASZNIENAMPRZYKRO.PL</title>
 
-
-
-
-
-  
 
 </head>
 
@@ -486,128 +68,54 @@ $(function() {
 
 
 <div class="container">
-<!-- AddToAny BEGIN -->
 
-<!-- AddToAny END -->
 <div class="content_font_title">OTO MODEL... MODEL POLITYKA</div> <br/>
 	
 	
 	
-	<div class="popup_premiera">
+	<div class="popup">
     <div class="bg"></div>
-    <div class="container2">
+    <div id="container2" class="container2">
         <input type="button" class="close" value="x" />
-        <div class="content">
-            <div id="premiera_player" class="premiera_player"></div>
-        </div>
     </div>
 	</div>
 	
-	<div class="popup_oczy">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-        <div class="content">
-             <div id="oczy_player" class="oczy_player"></div>
-        </div>
-    </div>
-	</div>
-	
-	<div class="popup_brzuch">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-        <div class="content">
-            <div id="brzuch_player" class="brzuch_player"></div>
-        </div>
-    </div>
-	</div>
-	
-	<div class="popup_nogi">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-       <div class="content">
-            <div id="nogi_player" class="nogi_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
-        </div>
-    </div>
-	</div>
-	
-	<div class="popup_verte">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-        <div class="content">
-            <div id="verte_player" class="verte_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
-        </div>
-    </div>
-	</div>
-	
-	
-	
-	<div class="popup_rece">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-        <div class="content">
-            <div id="rece_player" class="rece_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
-        </div>
-    </div>
-	</div>
-	
-	<div class="popup_usta">
-    <div class="bg"></div>
-    <div class="container2">
-        <input type="button" class="close" value="x" />
-        <div class="content">
-            <div id="usta_player" class="usta_player"><!-- <iframe width="320" height="240" src="https://www.youtube.com/embed/V4yKSztc_nI" frameborder="0" allowfullscreen></iframe> --></div>
-        </div>
-    </div>
-  </div>
-  
-
-	
+		
 
 <div class="man">
 
-<!-- <span class="oczy">OCZY</span> 
- -->
 <a href="" class="button_oczy">OCZY</a>
 <a href="" class="button_rece">RĘCE</a>
-
 <a href="" class="button_verte">VERTE</a>
-<!-- <span class="verte">VERTE</span>
- -->
 <a href="" class="button_nogi">NOGI</a>
-
-<!-- <span class="nogi">NOGI</span> -->
-
 <a href="" class="button_brzuch">BRZUCH</a>
 <a href="" class="button_usta">USTA</a>
-
-<!-- 
-<span class="usta">USTA</span>  -->
-<!-- <span class="brzuch">BRZUCH</span>
- -->
-<a href="" class="button_premiera">SPOT <br> FINAŁOWY</a> 
-
-
-<!-- <span class="oczy_wkrotce"></span> -->
-<!-- <span class="usta">USTA</span>
- -->
-<!-- <a href="" class="button_usta">USTA</a> -->
-<!-- <span class="verte_wkrotce"></span> -->
-<!-- <span class="brzuch_wkrotce"></span>
- --><!-- <span class="nogi_wkrotce"></span> -->
+<a href="" class="button_final">SPOT <br> FINAŁOWY</a> 
 </div>
 
 
-<div class="row" style="width:100%; border-bottom: 1px solid black; padding:10px;"> 
+<div class="row" style="width:100%; border-bottom: 1px solid #b1b1b1; padding:10px;"> 
 <div class="fb-like" data-href="http://strasznienamprzykro.pl/" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-via="spolecznoscJOW" data-related="spolecznoscJOW">Tweet</a>
 <a href="https://twitter.com/spolecznoscJOW" class="twitter-follow-button" data-show-count="false">Follow @spolecznoscJOW</a>
 </div>
-
+</div>
+<div class="pasek">ZOBACZ NASZE POZOSTAŁE SPOTY REFERENDALNE</div>
+<div class="filmy_box">
+<table class="filmy_table">
+<tr>
+<td class="filmy_size"><a id="frekwencja" class="button_frekwencja" href=""><img style="max-width:100%;
+max-height:100%;" src="gfx/frekwencja_552.png"></a></td>
+<td class="filmy_size"><a class="button_animacja" href=""><img style="max-width:100%;
+max-height:100%;" src="gfx/animacja.png"></a></td>
+</tr>
+<tr>
+<td>IDŹ NA REFERENDUM</td>
+<td>JAK DZIAŁAJĄ JOWY?</td>
+</tr>
+</table>
+</div>
+<div class="container">
 <div id="wsparcie" class="content">
 <span class="content_font_title"> PODOBA CI SIĘ NASZ PRZEKAZ?</span> <br/>
 <span class="content_font">Wesprzyj produkcję i promocję kolejnych spotów. <br/>
@@ -634,7 +142,6 @@ Każda złotówka pozwala nam dotrzeć do 10 nowych osób!</span><br/><br/>
 </div>
 <br>
 
-<div style="width:50%; backgroud-color:red">NOWNOWNOWNOO?</div><div style="width:50%:green">A nic?</div>
 
 		
 	

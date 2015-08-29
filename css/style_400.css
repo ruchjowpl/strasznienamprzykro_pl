@@ -31,6 +31,64 @@ background: url('') no-repeat;
 
 
 
+
+
+.filmy_box {
+
+position: relative;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 30px;
+color: #24458e;
+background-color: #ffffff;
+padding-top: 20px;
+height: 149px;
+width: 100%;
+text-align: center;
+
+}
+
+.filmy_table {
+
+width: 400px;
+margin: 0px auto;
+position: relative;
+text-align: center;
+
+}
+
+.filmy_size {
+
+width: 190px;
+height: 103px;
+background-color: #232323;
+
+}
+
+.filmy_table  td{
+
+border-left: solid #ffffff 5px;
+border-right: solid #ffffff 5px;
+
+}
+
+
+.pasek {
+
+position: relative;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 14px;
+line-height: 22px;
+color: #24458e;
+background-color: #ebeadf;
+height: 22px;
+width: 100%;
+text-align: center;
+
+}
+
 .footer_background {
 
 position: absolute;
@@ -350,6 +408,32 @@ display: inline-block;
 .button_usta:hover {
 
 background: url('../gfx/button_usta_hover_400.png')  no-repeat;
+
+}
+
+.button_final {
+
+position: relative;
+left: -150px;
+top: 118px;
+font-family: Lato, arial;
+font-weight: 900;
+font-size: 8px;
+line-height: 12px;
+padding-top: 5px;
+text-align: left;
+padding-left: 10px;
+width: 94px;
+height: 28px;
+background: url('../gfx/button_final_400.png') #434343 no-repeat;
+color: #ffffff;
+display: inline-block;
+
+}
+
+.button_final:hover {
+
+background: url('../gfx/button_final_hover_400.png') #727272 no-repeat;
 
 }
 
